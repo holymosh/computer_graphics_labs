@@ -1,0 +1,11 @@
+"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\holymosh\CLionProjects\untitled2
+CMake Error at CMakeLists.txt:6 (add_subdirectory):
+  The source directory
+
+    C:/Users/holymosh/CLionProjects/untitled2/libMock
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/CMakeOutput.log".

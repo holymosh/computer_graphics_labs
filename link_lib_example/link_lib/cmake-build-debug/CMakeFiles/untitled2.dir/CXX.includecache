@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/holymosh/CLionProjects/untitled2/libMock/libMockPP.cpp
+libMockPP.h
+C:/Users/holymosh/CLionProjects/untitled2/libMock/libMockPP.h
+iostream
+-
+
+C:/Users/holymosh/CLionProjects/untitled2/libMock/libMockPP.h
+
+C:/Users/holymosh/CLionProjects/untitled2/main.cpp
+iostream
+-
+libMock/libMockPP.h
+C:/Users/holymosh/CLionProjects/untitled2/libMock/libMockPP.h
+

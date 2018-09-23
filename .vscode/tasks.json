@@ -6,9 +6,10 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "g++",
+            "command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-win32-seh-rt_v6-rev0\\mingw64\\bin\\g++",
             "args": [
-                "-g","main.cpp"
+                "-g","${workspaceFolder}\\cube\\main.cpp","${workspaceFolder}\\cube\\obj.cpp","-static"//, "-static-libgcc" ,"-static-libstdc++"
+                //"-o","out","-I","${workspaceFolder}\\cube","*.cpp"
             ],
             "group": {
                 "kind": "build",

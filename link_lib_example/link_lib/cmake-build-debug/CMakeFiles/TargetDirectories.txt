@@ -1,0 +1,6 @@
+C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/libMock/CMakeFiles/libMockLib.dir
+C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/libMock/CMakeFiles/edit_cache.dir
+C:/Users/holymosh/CLionProjects/untitled2/cmake-build-debug/libMock/CMakeFiles/rebuild_cache.dir
