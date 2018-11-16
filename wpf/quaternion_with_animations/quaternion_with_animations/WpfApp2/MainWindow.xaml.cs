@@ -70,10 +70,13 @@ namespace WpfApp2
             // Animate brush with color 
             var animation = new ColorAnimationUsingKeyFrames();
             animation.KeyFrames.Add(new DiscreteColorKeyFrame(Colors.Blue, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))));
-            animation.KeyFrames.Add(new DiscreteColorKeyFrame(Colors.Blue, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(5))));
-            animation.KeyFrames.Add(new LinearColorKeyFrame(Colors.Red, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(7))));
-            brush.BeginAnimation(SolidColorBrush.ColorProperty, animation);
-
+            animation.KeyFrames.Add(new DiscreteColorKeyFrame(Colors.SlateBlue, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))));
+            animation.KeyFrames.Add(new LinearColorKeyFrame(Colors.Red, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))));
+            animation.KeyFrames.Add(new LinearColorKeyFrame(Colors.Aqua, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))));
+            animation.KeyFrames.Add(new LinearColorKeyFrame(Colors.CadetBlue, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))));
+            animation.KeyFrames.Add(new LinearColorKeyFrame(Colors.DarkGoldenrod, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))));
+            brush.BeginAnimation(SolidColorBrush.ColorProperty, animation,HandoffBehavior.Compose);
+            animation.RepeatBehavior = RepeatBehavior.Forever;
             //Add the visual and camera to the Viewport3D.
             myViewport.Camera = myPCamera;
             myViewport.Children.Add(modelsVisual);

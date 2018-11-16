@@ -37,15 +37,15 @@ namespace WpfApp3
 
             ModelVisual3D myModelVisual3D = new ModelVisual3D();
 
-            OrthographicCamera myOCamera = new OrthographicCamera(new Point3D(0, 0, 5), new Vector3D(0, 0, -1), new Vector3D(0, 1, 0), 8);
+            OrthographicCamera myOCamera = new OrthographicCamera(new Point3D(0, 0, 6), new Vector3D(0, 0, -1), new Vector3D(0, 1, 0), 8);
 
             myViewport3D.Camera = myOCamera;
 
-            DirectionalLight myDirectionalLight = new DirectionalLight();
+            AmbientLight myDirectionalLight = new AmbientLight();
 
             myDirectionalLight.Color = Colors.White;
 
-            myDirectionalLight.Direction = new Vector3D(0, 0, -3);
+            //myDirectionalLight.Direction = new Vector3D(0, 0, -3);
 
             myModel3DGroup.Children.Add(myDirectionalLight);
 
@@ -108,7 +108,7 @@ namespace WpfApp3
             //4
             myPositionCollection.Add(new Point3D(1.0, 1.0, 1.0));
 
-            myPositionCollection.Add(new Point3D(1.0, 0.0, 1.0));    //5
+            myPositionCollection.Add(new Point3D(1.0, 0.0, 1.0));
 
             myPositionCollection.Add(new Point3D(1.0, 0.0, 0.0));
 
@@ -207,17 +207,17 @@ namespace WpfApp3
 
             BitmapImage bm1 = new BitmapImage();
             bm1.BeginInit();
-            bm1.UriSource = new Uri("holy.jpg", UriKind.Relative);
+            bm1.UriSource = new Uri("dog.jpg", UriKind.RelativeOrAbsolute);
             bm1.EndInit();
 
             ImageBrush imgBrush = new ImageBrush(bm1);
-
+            var brush = new SolidColorBrush(Color.FromRgb(100, 200, 100));
             DiffuseMaterial myMaterial = new DiffuseMaterial(imgBrush);
 
             myGeometryModel.Material = myMaterial;
 
 
-            RotateTransform3D myRotateTransform3D = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(0, 0, 1), 0), new Point3D(0, 0, 0));
+            RotateTransform3D myRotateTransform3D = new RotateTransform3D(new AxisAngleRotation3D(new Vector3D(1, 1, 0), 0), new Point3D(0, 0, 0));
 
             Transform3DGroup trGrp = new Transform3DGroup();
 
