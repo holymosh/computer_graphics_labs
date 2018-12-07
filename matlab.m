@@ -1,0 +1,34 @@
+im1 = imread('cameraman.tif');
+figure,imshow(im1);
+d1 = mean2(im1);
+d11 = std2(im1);
+d1,d11;
+I = imread('cameraman.tif'); imhist(I);
+[h,cx] = imhist(I);
+h = log10(h);
+% 3
+figure, plot(cx, h);
+close all;
+im = imread('cameraman.tif');
+imshow(im);
+img_fig = gcf;
+figure;
+imhist(im);
+[h b] = imhist(im);
+h = log10(h);
+figure, plot(b,h);
+figure(img_fig);
+improfile('bilinear.tif');
+
+RGB = imread('autumn.tif');
+imshow(RGB);
+HSV = rgb2hsv(RGB);
+HSV(:,:,3) = imadjust(HSV(:,:,3),[0.02 0.68], [0 1], 0.7);
+RGB = hsv2rgb(HSV);
+figure, imshow(RGB);
+close all;
+I = imread('concordorthophoto.png');
+imshow(I);
+figure, imhist(I);
+I = imadjust(I, [10 200] / 255, [], 1);
+figure, imshow(I);

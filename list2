@@ -1,0 +1,22 @@
+close all;
+im = imread('cameraman.tif');
+im = im2double(im);
+h1 = [-1, -1, -1, -1,8, -1 ,1, -1 ,1];
+im1 = filter2(h1,im);
+figure,imshow(im),title('1');
+figure,imshow(im1),title('2');
+
+im = imread('cameraman.tif');
+imshow(im);
+I = medfilt2(im);
+figure, imshow(I);
+
+script;
+echo off all;
+close all;
+I = imread('cameraman.tif');
+figure,imshow(I);
+ID = imnoise(I, 'gaussian',0 , 0.01);
+figure, imshow(ID);
+ID = imnoise(I , 'speckle' , 0.08);
+figure, imshow(ID);
